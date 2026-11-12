@@ -1,0 +1,9 @@
+project: savantenvs/PDAL
+target: fuzz_qfit
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_qfit/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_qfit
+    libfuzzer: true
+    timeout: 30

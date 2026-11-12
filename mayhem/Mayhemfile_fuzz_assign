@@ -1,0 +1,9 @@
+project: savantenvs/PDAL
+target: fuzz_assign
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_assign/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_assign
+    libfuzzer: true
+    timeout: 30

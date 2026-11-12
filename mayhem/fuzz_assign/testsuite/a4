@@ -1,0 +1,1 @@
+Intensity[:]=7 WHERE (X > 10 && Y < 50)
